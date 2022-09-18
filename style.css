@@ -32,7 +32,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
 }
 
 /* ---  Groups & Items --- */
@@ -63,6 +63,17 @@ header {
   font-family: "Tangerine", cursive;
   font-size: 72px;
   color: #ecdbc9;
+  margin-left: 20px;
+}
+
+header nav{
+  display:flex;
+  justify-content: center;
+}
+
+header nav ul{
+  display: flex;
+  justify-content: center;
 }
 
 header nav ul li {
@@ -96,6 +107,16 @@ form input {
   width: 180px;
 }
 
+form div{
+  display: flex;
+  justify-content: space-between;
+}
+
+form select, form input{
+  margin-bottom: 4px;
+  width: 162px;
+}
+
 form button {
   background-color: #83092e;
   border: none;
@@ -104,6 +125,7 @@ form button {
   padding: 15px;
   width: 100%;
 }
+
 
 /* -------  Footer ------- */
 
@@ -118,3 +140,23 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width: 600px){
+header{
+display: flex;
+justify-content: space-between;
+padding: 0px;
+}
+
+
+
+header nav ul{
+align-items: center;
+}
+
+.group{
+  align-items: center;
+flex-direction: row;
+}
+
+}
